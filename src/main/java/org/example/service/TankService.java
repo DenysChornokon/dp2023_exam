@@ -23,8 +23,9 @@ public class TankService {
 
     public Tank getTankById(Long id) {
         logger.info("Fetching tank with id: {}", id);
-        return tankRepository.findById(id)
-                .orElseThrow(() -> new TankNotFoundException("Tank not found with id: " + id));
+
+
+        return null;
     }
 
     public Tank createTank(Tank tank) {
